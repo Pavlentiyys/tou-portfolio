@@ -1,0 +1,303 @@
+body {
+    margin: 0;
+    font-family: "Caveat", cursive;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 2vw;
+    margin: 0;
+}
+
+h3 {
+    font-size: 2vw;
+    margin: 0;
+}
+
+p {
+    font-size: 1.3vw;
+    margin: 0;
+}
+
+@media (max-width: 1366px) {
+    h2 {
+        font-size: 3.5vw;
+    }
+    
+    h3 {
+        font-size: 3vw;
+    }
+    p {
+        font-size: 2vw
+    }
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5vw; 
+    background-color: #ff526c;
+    position: sticky;
+}
+
+.logo {
+    color: #fff;
+}
+
+.navbar-list {
+    display: flex;
+    gap: 3vw;
+    list-style-type: none;
+}
+
+.navbar-list__item {
+    background-color: #fff;
+    padding: 0.8vh 1vw;
+    border-radius: 2px;
+}
+
+.navbar-list__item a {
+    color: #ff526c;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    position: relative;
+    
+}
+
+.navbar-list__item a:after {
+    content: " ";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #ff526c;
+    transition: ease-in 0.3s;
+}
+
+.navbar-list__item a:hover::after {
+    width: 100%; 
+}
+
+section {
+    height: 600px;
+}
+
+.main {
+    background: url("../images/bg.webp") no-repeat center center / cover;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+}
+
+.main-content {
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 20px;
+    width: 50%;
+    text-align: center;
+}
+
+.headline {
+    text-align: center;
+    padding: 35px 0;
+    background-color: #c52f45;
+    color: #fff;
+    position: relative;
+    width: 100%;
+}
+
+.about {
+    background: #fff;
+    color: #c52f45;
+    height: 100%;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.skills-container {
+    margin: 20px;
+    border: 5px solid #ff526c;
+    padding: 40px;
+    border-radius: 15px;
+}
+
+.skill-progress {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.skill {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.skill span {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.progress-bar {
+    width: 100%;
+    background: #e0e0e0;
+    border-radius: 10px;
+    height: 10px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background: #c52f45;
+}
+
+.experience {
+    background: #fff;
+    margin: 40px 0;
+    color: #c52f45;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.experience-content {
+    max-width: 800px;
+    margin: 40px auto;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.job-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #c52f45;
+}
+
+.job-card h4 {
+    margin-bottom: 5px;
+    color: #c52f45;
+    font-size: 20px;
+}
+
+.contact {
+    background: #ff526c;
+    height: 700px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-bg {
+    background: url("../images/headline.png");
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    margin: 50px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+}
+
+.contact-info a {
+    color: #c52f45;
+    font-size: 1.5vw;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    width: 50%;
+}
+
+.contact-form h3 {
+    text-align: center;
+    margin: 10px;
+}
+
+.contact-form label {
+    font-size: 1.2vw;
+    color: #333;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1vw;
+}
+
+.contact-form button {
+    background-color: white;
+    color: #c52f45;
+    padding: 10px 15px;
+    border: 2px solid #c52f45;
+    font-family: "Caveat", cursive;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 1.2vw;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #c52f45;
+    color: white;
+}
+
+footer {
+    height: 500px;
+    background-color: #333;
+}
+
+
+
