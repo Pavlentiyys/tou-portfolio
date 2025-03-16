@@ -3,6 +3,10 @@ body {
     font-family: "Caveat", cursive;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 a:hover {
     text-decoration: none;
 }
